@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    min-height: 100vh;
+    background: #1f1c1c;
+    font-family: sans-serif;
+}
+.container{
+    width:100%;
+    background: url("vegan-foods-background-with-copy-space-healthy-foods-on-the-wooden-table-photo.jpg");
+    padding: 60px 10px;
+    background-position:center ;
+    background-size: cover ;
+    background-repeat: no-repeat ;
+    text-align: center;
+    color: #fff;
+}
+.container h2{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.container p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.searchbox{
+    max-width: 600px;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchbox input{
+    padding: 12px;
+    width: 70%;
+    border-radius: 5px 0 5px;
+    outline: 0;
+    border: 1px solid rgb(228, 69, 69);
+    font-size: 1rem;
+}
+.searchbox button{
+    padding: 12px 30px;
+    background-color: rgb(240, 72, 72);
+    border: 0;
+    outline: none;
+    border: 1px solid rgb(221, 59, 59);
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+}
+.notfound{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    color: whitesmoke;
+}
+.recipes{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.recipe-card {
+    width: 200px;
+    height: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px ;
+    margin-top :30px;
+    text-align: center;
+    position: relative;
+}
+.recipe-card  img{
+    width: 100%px;
+    height: 120px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.recipe-card button {
+    padding: 4px 10px;
+    background: rgb(85, 211, 85);
+    color: white;
+    border-radius: 5px;
+    border: 0;
+    margin: 10px 0;
+}
+.popup-card{
+    background: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 10;
+    border:2px solid red;
+    display: none;
+    
+}
+@media (max-width: 300px) {
+    .popup-card {
+        width: 90%; 
+}
+}
+.popup-card h3 {
+    margin: 1px 0;
+    color: #333;
+    font-size: 16px;
+    overflow-y: auto;  
+    max-height: 300px; 
+    padding-right: 10px;
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgb(230, 62, 62);
+    padding: 5px;
+    border: 0;
+    border-radius: 6px;
+    color: whitesmoke;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
